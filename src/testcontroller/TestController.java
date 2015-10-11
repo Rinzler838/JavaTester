@@ -132,4 +132,96 @@ public class TestController
 
 	}	
 	
+	//New tests
+	
+	public void testWhileLoop()
+	{
+		int x = 2;
+		
+		while(x < 10)
+		{
+			System.out.println("Number is less than 10");			
+		}
+	}
+
+	public void testWhileLoopTwo()
+	{
+		int x = 25;
+		
+		while(x < 50)
+			
+			System.out.println("x is : " + x);
+			x++;
+			System.out.println("\n");
+			
+	}
+	
+	public void testForLoop()
+	{	
+		for(int y = 10; y < 10;)
+		{
+			System.out.println("Number is less than 10");
+		}
+	}
+
+	public static void testForLoopTwo()
+	{
+		for(int y = 100; y < 200;)
+		{
+			System.out.println("y is : " + y);
+			y++;
+			System.out.println("\n");
+		}
+	}
+	
+	public static void testForEach()
+	{
+		int testArray[] = {2, 4, 6, 8, 10};
+		
+		for(int var: testArray)
+		{
+			System.out.println(var);
+		}
+	}
+	
+	public static void testForEachTwo()
+	{
+		int [] numbers = {1, 2, 3, 4, 5};
+		
+		for(int u: numbers)
+		{
+			System.out.println(u);
+			System.out.println(",");
+		}
+		
+		System.out.println("\n");
+		String [] names = {"Matt", "Jared", "Adam", "Jason"};
+		
+		for(String name: names)
+		{
+			System.out.println(names);
+			System.out.println(",");
+		}
+	}
+	
+	public static void testNestedLoop()
+	{
+		for(int e = 8; e > 0; e--)
+		{
+			for(int t = e; t < 8; t++)
+			{
+				System.out.println("_");
+			}
+			
+			for(int t = e; t > 0; t--)
+			{
+				System.out.println(e);
+			}
+			
+			System.out.println();
+		}
+	}
+	
+	
+
 }
